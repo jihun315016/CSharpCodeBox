@@ -1,4 +1,4 @@
-// ¹éÁØ 20124 ¸ð¸£°í¸®Áò È¸Àå´Ô ÃßÃµ ¹Þ½À´Ï´Ù
+// ë°±ì¤€ 20124 ëª¨ë¥´ê³ ë¦¬ì¦˜ íšŒìž¥ë‹˜ ì¶”ì²œ ë°›ìŠµë‹ˆë‹¤
 
 namespace MyNamespace
 {
@@ -14,12 +14,13 @@ namespace MyNamespace
             for (int i = 0; i < n; i++)
             {
                 input = Console.ReadLine().Split();
-                if (Convert.ToInt32(input[1]) > value)
+
+                if (Convert.ToInt32(input[1]) > value) // íˆ¬í‘œ ìˆ˜ ê²€ì‚¬
                 {
                     name = input[0];
                     value = Convert.ToInt32(input[1]);
                 }
-                else if (Convert.ToInt32(input[1]) == value && string.Compare(input[0], name) < 0)
+                else if (Convert.ToInt32(input[1]) == value && string.Compare(input[0], name) < 0) // ì´ë¦„ ì‚¬ì „ìˆœ ê²€ì‚¬
                 {
                     name = input[0];
                 }

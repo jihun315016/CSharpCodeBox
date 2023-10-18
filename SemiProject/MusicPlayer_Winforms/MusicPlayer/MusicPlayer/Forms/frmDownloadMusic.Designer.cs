@@ -36,28 +36,31 @@
             listAll = new ListBox();
             btnAdd = new Button();
             btnRemove = new Button();
+            label1 = new Label();
+            label2 = new Label();
             SuspendLayout();
             // 
             // txtSearch
             // 
             txtSearch.Location = new Point(16, 286);
             txtSearch.Name = "txtSearch";
-            txtSearch.Size = new Size(444, 23);
+            txtSearch.Size = new Size(598, 23);
             txtSearch.TabIndex = 0;
             txtSearch.TextChanged += txtSearch_TextChanged;
             // 
             // lblTitle
             // 
+            lblTitle.Font = new Font("맑은 고딕", 8F, FontStyle.Regular, GraphicsUnit.Point);
             lblTitle.Location = new Point(16, 312);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(444, 23);
+            lblTitle.Size = new Size(598, 23);
             lblTitle.TabIndex = 1;
             lblTitle.Text = "label1";
             lblTitle.TextAlign = ContentAlignment.MiddleLeft;
             // 
             // btnDownload
             // 
-            btnDownload.Location = new Point(466, 315);
+            btnDownload.Location = new Point(620, 312);
             btnDownload.Name = "btnDownload";
             btnDownload.Size = new Size(75, 23);
             btnDownload.TabIndex = 3;
@@ -67,7 +70,7 @@
             // 
             // btnSearch
             // 
-            btnSearch.Location = new Point(466, 286);
+            btnSearch.Location = new Point(620, 286);
             btnSearch.Name = "btnSearch";
             btnSearch.Size = new Size(75, 23);
             btnSearch.TabIndex = 4;
@@ -81,21 +84,21 @@
             lbxCurrent.ItemHeight = 15;
             lbxCurrent.Location = new Point(16, 27);
             lbxCurrent.Name = "lbxCurrent";
-            lbxCurrent.Size = new Size(224, 244);
+            lbxCurrent.Size = new Size(300, 244);
             lbxCurrent.TabIndex = 5;
             // 
             // listAll
             // 
             listAll.FormattingEnabled = true;
             listAll.ItemHeight = 15;
-            listAll.Location = new Point(317, 27);
+            listAll.Location = new Point(393, 27);
             listAll.Name = "listAll";
-            listAll.Size = new Size(224, 244);
+            listAll.Size = new Size(300, 244);
             listAll.TabIndex = 6;
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(246, 107);
+            btnAdd.Location = new Point(322, 118);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(65, 23);
             btnAdd.TabIndex = 7;
@@ -104,18 +107,40 @@
             // 
             // btnRemove
             // 
-            btnRemove.Location = new Point(246, 136);
+            btnRemove.Location = new Point(322, 147);
             btnRemove.Name = "btnRemove";
             btnRemove.Size = new Size(65, 23);
             btnRemove.TabIndex = 8;
             btnRemove.Text = "<<";
             btnRemove.UseVisualStyleBackColor = true;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("맑은 고딕", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(16, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(113, 15);
+            label1.TabIndex = 9;
+            label1.Text = "Current Music List";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("맑은 고딕", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.Location = new Point(393, 9);
+            label2.Name = "label2";
+            label2.Size = new Size(83, 15);
+            label2.TabIndex = 10;
+            label2.Text = "All Music List";
+            // 
             // frmDownloadMusic
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(553, 352);
+            ClientSize = new Size(707, 352);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(btnRemove);
             Controls.Add(btnAdd);
             Controls.Add(listAll);
@@ -141,5 +166,7 @@
         private ListBox listAll;
         private Button btnAdd;
         private Button btnRemove;
+        private Label label1;
+        private Label label2;
     }
 }

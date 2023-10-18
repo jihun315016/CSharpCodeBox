@@ -7,6 +7,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VideoLibrary;
+using MediaToolkit;
+using System.Net;
+using MediaToolkit.Model;
 
 namespace MusicPlayer.Forms
 {
@@ -24,7 +28,7 @@ namespace MusicPlayer.Forms
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-
+            //lblTitle.Text = getTitle(txtSearch.Text);
         }
 
         private void btnDownload_Click(object sender, EventArgs e)
@@ -38,6 +42,20 @@ namespace MusicPlayer.Forms
             {
                 lblTitle.Text = string.Empty;
             }
+        }
+
+        private string getYoutubeVideo(string url)
+        {
+            YouTube youTube = YouTube.Default;
+            var video = youTube.GetVideo(url);
+            string title = video.Title;
+
+            VideoInfo videoInfo = video.Info;
+            int? lengthSecond = videoInfo.LengthSeconds;
+
+
+
+            return title;
         }
     }
 }

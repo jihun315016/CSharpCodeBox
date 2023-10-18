@@ -31,5 +31,13 @@ namespace MusicPlayer.Forms
         {
 
         }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            if (lblTitle.Text.Equals(string.Empty))
+            {
+                lblTitle.Text = string.Empty;
+            }
+        }
     }
 }

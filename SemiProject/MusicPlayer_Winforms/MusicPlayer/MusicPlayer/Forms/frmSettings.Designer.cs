@@ -59,6 +59,8 @@
             // 
             // ccBtnAllListManage
             // 
+            ccBtnAllListManage.FlatAppearance.BorderSize = 0;
+            ccBtnAllListManage.FlatStyle = FlatStyle.Flat;
             ccBtnAllListManage.FormName = null;
             ccBtnAllListManage.Location = new Point(3, 3);
             ccBtnAllListManage.Name = "ccBtnAllListManage";
@@ -69,6 +71,8 @@
             // 
             // ccBtnSelectPlayList
             // 
+            ccBtnSelectPlayList.FlatAppearance.BorderSize = 0;
+            ccBtnSelectPlayList.FlatStyle = FlatStyle.Flat;
             ccBtnSelectPlayList.FormName = null;
             ccBtnSelectPlayList.Location = new Point(3, 59);
             ccBtnSelectPlayList.Name = "ccBtnSelectPlayList";
@@ -79,6 +83,8 @@
             // 
             // ccBtnDownloadMusic
             // 
+            ccBtnDownloadMusic.FlatAppearance.BorderSize = 0;
+            ccBtnDownloadMusic.FlatStyle = FlatStyle.Flat;
             ccBtnDownloadMusic.FormName = null;
             ccBtnDownloadMusic.Location = new Point(3, 115);
             ccBtnDownloadMusic.Name = "ccBtnDownloadMusic";
@@ -107,8 +113,8 @@
 
         private MenuStrip menuStrip1;
         private FlowLayoutPanel flowLayoutPanel1;
-        private Controls.ccButton ccBtnDownloadMusic;
-        private Controls.ccButton ccBtnSelectPlayList;
         private Controls.ccButton ccBtnAllListManage;
+        private Controls.ccButton ccBtnSelectPlayList;
+        private Controls.ccButton ccBtnDownloadMusic;
     }
 }

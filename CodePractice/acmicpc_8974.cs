@@ -1,4 +1,4 @@
-// - 8974 희주의 수학시험
+// 8974 희주의 수학시험
 
 namespace ConsoleApp1;
 

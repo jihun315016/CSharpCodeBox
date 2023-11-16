@@ -2,8 +2,6 @@
 
 using System.Diagnostics.Metrics;
 
-namespace ConsoleApp1;
-
 public class Program
 {
     public static void Main(string[] args)

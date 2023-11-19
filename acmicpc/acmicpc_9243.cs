@@ -1,7 +1,5 @@
 // 9243 파일 완전 삭제
 
-using System.Diagnostics.Metrics;
-
 public class Program
 {
     public static void Main(string[] args)

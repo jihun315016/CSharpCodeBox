@@ -1,7 +1,5 @@
 // 8974 희주의 수학시험
 
-namespace ConsoleApp1;
-
 public class Program
 {
     public static void Main(string[] args)

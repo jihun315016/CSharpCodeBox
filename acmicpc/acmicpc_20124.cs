@@ -1,32 +1,29 @@
 // 백준 20124 모르고리즘 회장님 추천 받습니다
 
-namespace MyNamespace
+class Program
 {
-    class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
+        int n = Convert.ToInt32(Console.ReadLine());
+        string[] input = new string[] { };
+        int value = 0;
+        string name = string.Empty;
+
+        for (int i = 0; i < n; i++)
         {
-            int n = Convert.ToInt32(Console.ReadLine());
-            string[] input = new string[] { };
-            int value = 0;
-            string name = string.Empty;
+            input = Console.ReadLine().Split();
 
-            for (int i = 0; i < n; i++)
+            if (Convert.ToInt32(input[1]) > value) // 투표 수 검사
             {
-                input = Console.ReadLine().Split();
-
-                if (Convert.ToInt32(input[1]) > value) // 투표 수 검사
-                {
-                    name = input[0];
-                    value = Convert.ToInt32(input[1]);
-                }
-                else if (Convert.ToInt32(input[1]) == value && string.Compare(input[0], name) < 0) // 이름 사전순 검사
-                {
-                    name = input[0];
-                }
+                name = input[0];
+                value = Convert.ToInt32(input[1]);
             }
-
-            Console.WriteLine(name);
+            else if (Convert.ToInt32(input[1]) == value && string.Compare(input[0], name) < 0) // 이름 사전순 검사
+            {
+                name = input[0];
+            }
         }
+
+        Console.WriteLine(name);
     }
 }

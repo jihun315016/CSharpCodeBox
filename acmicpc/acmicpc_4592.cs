@@ -1,7 +1,5 @@
 // 백준 4592 중복을 없애자
 
-namespace ConsoleApp1;
-
 public class Program
 {
     public static void Main(string[] args)

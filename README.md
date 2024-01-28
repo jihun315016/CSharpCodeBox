@@ -1,2 +1,2 @@
-# CSharpCodeBox
-- C# 공부용 저장소
+# Code-Practice
+- 코드 공부용 저장소

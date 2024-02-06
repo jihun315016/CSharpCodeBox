@@ -7,7 +7,6 @@ profit = c - b
 
 if profit <= 0:
     print(-1)
-
 elif a % profit == 0:
     print(a // profit + 1)
 else:

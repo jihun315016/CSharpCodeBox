@@ -10,4 +10,3 @@ def getCount(n):
 
 n = int(input())
 print(getCount(n))
-6

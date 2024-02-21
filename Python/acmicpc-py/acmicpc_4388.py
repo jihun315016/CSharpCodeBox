@@ -3,8 +3,6 @@
 import sys
 input = sys.stdin.readline
 
-aa = 'abc'
-
 while True:
   a, b = input().split()
   carry = 0

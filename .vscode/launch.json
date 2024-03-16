@@ -5,6 +5,13 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "acmicpc_4344",
+            "request": "launch",
+            "mainClass": "acmicpc_4344",
+            "projectName": "Code-Practice_72c78b02"
+        },
+        {
             "name": "Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",

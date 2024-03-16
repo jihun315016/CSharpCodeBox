@@ -1,7 +1,6 @@
 # 1076 저항
 
 import sys
-
 input = sys.stdin.readline
 
 dic = {

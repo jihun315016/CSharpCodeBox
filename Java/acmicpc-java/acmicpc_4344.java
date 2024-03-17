@@ -3,7 +3,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-class acmicpc_4344 {
+class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[] sArr;

@@ -23,7 +23,7 @@ while True:
         
         else: # a == '#' and b == '0'
             if dead:
-                print(f"{cnt} :RIP")
+                print(f"{cnt} RIP")
             elif o / 2 < w < o * 2:
                 print(f"{cnt} :-)") # 행복
             else:

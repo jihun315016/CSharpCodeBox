@@ -6,7 +6,7 @@ score = 0
 last = 0
 
 for a in arr:
-    if abs(score - 100) > abs(score + a - 100):
+    if abs(score - 100) >= abs(score + a - 100):
         score = score + a
     else:
         break
